@@ -1,0 +1,9 @@
+<h1>Welcome to my BlogBlog<h1>
+
+<% @posts.each do |post| %>
+ <h2><%= link_to post.title, post %></h2>
+
+ <p>
+  <%= truncate post.text %>
+ </p>
+<% end %>
